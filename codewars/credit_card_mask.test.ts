@@ -1,8 +1,9 @@
 import { test , expect } from 'bun:test'
 import { maskify } from './credit_card_mask'
+// expect().toEqual()
 
 test ('shound get ###########5616', function () {
-    // expect().toEqual()
+    
     expect(maskify("4556364607935616")).toEqual("############5616");});
 
 
