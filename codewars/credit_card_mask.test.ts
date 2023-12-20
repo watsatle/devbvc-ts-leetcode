@@ -2,11 +2,11 @@ import { test , expect } from 'bun:test'
 import { maskify } from './credit_card_mask'
 // expect().toEqual()
 
-test ('shound get ###########5616', function () {
+test ('shound get ###########5616',  () => {
     
     expect(maskify("4556364607935616")).toEqual("############5616");});
 
 
-    test ('should get #1111', function () {
+    test ('should get #1111',  () => {
         expect(maskify("11111")).toEqual("#1111");});
 
